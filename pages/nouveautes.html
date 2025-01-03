@@ -9,4 +9,157 @@
     <body>
 
     </body>
+</html><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nouveautes {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 200px;
+            height: 200px;
+            background-color: #ddd;
+        }
+
+        .product-label {
+            background: #f8f9fa;
+            padding: 0.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .price {
+            color: #3498db;
+            margin: 1rem 0;
+        }
+
+        .add-to-cart {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 0.5rem 2rem;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        footer h3 {
+            margin-bottom: 1rem;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer ul li {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="#">Accueil</a>
+            <a href="#">Products</a>
+            <a href="#">Categories</a>
+            <a href="#">Promotions</a>
+            <a href="#">Nouveautés</a>
+            <a href="#">Contact</a>
+            <a href="#">Inscription</a>
+            <a href="#">Connexion</a>
+        </div>
+    </nav>
+
+    <main class="nouveautes">
+        <h1>Nouveautés</h1>
+        <div class="products">
+            <div class="product-card">
+                <div class="product-label">Nouveau</div>
+                <img src="/api/placeholder/200/200" alt="Tablette Pro 2024">
+                <h3>Tablette Pro 2024</h3>
+                <p class="price">4494.99 ₣</p>
+                <p>La dernière tablette avec stylet inclus</p>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-label">Nouveau</div>
+                <img src="/api/placeholder/200/200" alt="Montre Sport Connect">
+                <h3>Montre Sport Connect</h3>
+                <p class="price">1959.99 ₣</p>
+                <p>Suivi fitness et notifications</p>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h3>À propos de ShopEasy</h3>
+            <p>Votre boutique en ligne de confiance depuis 2024</p>
+        </div>
+        <div>
+            <h3>Liens utiles</h3>
+            <ul>
+                <li>Conditions générales</li>
+                <li>Politique de confidentialité</li>
+                <li>Livraison</li>
+                <li>Retours</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>Email: contact@shopeasy.com</p>
+            <p>Tel: +237 xxx xx xx xx</p>
+        </div>
+    </footer>
+</body>
 </html>
